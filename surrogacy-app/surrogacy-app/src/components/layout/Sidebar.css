@@ -1,0 +1,43 @@
+.sidebar {
+  width: 240px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  height: 100vh;
+  position: fixed;
+  top: 60px; /* Same as header height */
+  left: 0;
+  padding-top: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav li a {
+  display: block;
+  padding: 15px 20px;
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.sidebar nav li a:hover {
+  background-color: #34495e;
+}
+
+/* Basic responsiveness - will be improved later */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px; /* Collapsed sidebar */
+  }
+  .sidebar nav li a {
+    text-align: center;
+    padding: 15px 0;
+  }
+  .sidebar nav li a span {
+    display: none; /* Hide text on collapsed sidebar */
+  }
+}

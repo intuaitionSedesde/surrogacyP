@@ -1,0 +1,20 @@
+.main-layout {
+  display: flex;
+  padding-top: 60px; /* Same as header height */
+}
+
+.content {
+  margin-left: 240px; /* Same as sidebar width */
+  padding: 20px;
+  width: calc(100% - 240px);
+  background-color: #f0f2f5;
+  min-height: calc(100vh - 60px);
+}
+
+/* Basic responsiveness */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 60px; /* Same as collapsed sidebar width */
+    width: calc(100% - 60px);
+  }
+}
