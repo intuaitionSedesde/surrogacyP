@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Surrogacy Matching & Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application is a comprehensive platform designed to facilitate matching and management services for surrogacy. It connects intended parents, surrogates, medical professionals, and legal experts through a set of tailored user interfaces.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You need to have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installing
 
-### `npm test`
+1.  **Clone the repository:**
+    ```sh
+    git clone <repository-url>
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2.  **Navigate to the project directory:**
+    ```sh
+    cd surrogacy-app/surrogacy-app
+    ```
+    *(Note: The project is in a nested directory due to an environment issue during setup.)*
 
-### `npm run build`
+3.  **Install the dependencies:**
+    ```sh
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Running the Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run the application in development mode, use the following command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm start
+```
 
-### `npm run eject`
+This will open the application in your default browser at [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Available Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   `npm test`: Launches the test runner.
+-   `npm run build`: Builds the app for production.
+-   `npm run eject`: Ejects from `create-react-app`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application follows a feature-sliced design pattern to keep the codebase organized and scalable.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   `src/api`: Contains mock API calls.
+-   `src/auth`: Intended for authentication logic.
+-   `src/store`: For global state management using Zustand.
+-   `src/components`: Contains reusable UI components.
+    -   `src/components/common`: Basic, reusable components like buttons, cards, etc.
+    -   `src/components/layout`: Components for the main application layout (Header, Sidebar).
+-   `src/pages`: Contains the main pages for each user dashboard.
+    -   `src/pages/admin`: Components and pages related to the Admin Panel.
+    -   `src/pages/doctor`: Pages for the Doctor's Panel.
+    -   ...and so on for each user role.
+-   `src/hooks`: For custom React hooks.
+-   `src/utils`: For utility functions.
