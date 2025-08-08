@@ -1,12 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './RoleSelection.css';
-import { FaUserShield, FaUserDoctor, FaScaleBalanced, FaBabyCarriage, FaHandHoldingHeart } from 'react-icons/fa';
+import { FaUserShield, FaUserMd, FaBalanceScale, FaBabyCarriage, FaHandHoldingHeart } from 'react-icons/fa';
 
 const roles = [
   { name: 'Administrator', path: '/admin', icon: <FaUserShield />, tooltip: 'Manages the entire platform' },
-  { name: 'Doctor', path: '/doctor', icon: <FaUserDoctor />, tooltip: 'Access to medical dashboard' },
-  { name: 'Lawyer', path: '/lawyer', icon: <FaScaleBalanced />, tooltip: 'Manages contracts and legal matters' },
+  { name: 'Doctor', path: '/doctor', icon: <FaUserMd />, tooltip: 'Access to medical dashboard' },
+  { name: 'Lawyer', path: '/lawyer', icon: <FaBalanceScale />, tooltip: 'Manages contracts and legal matters' },
   { name: 'Intended Parent', path: '/intended-parent', icon: <FaBabyCarriage />, tooltip: 'Begin your journey to build a family' },
   { name: 'Surrogate', path: '/surrogate', icon: <FaHandHoldingHeart />, tooltip: 'Access your tracking dashboard' },
 ];
